@@ -115,7 +115,6 @@ The more important question is:
 > Which measurement best aligns with the question I am trying to answer?
 
 ```
-```
 ## A Worked Example: Four Definitions of Depression
 
 Imagine four investigators who all claim to be studying depression.
@@ -210,7 +209,6 @@ Instead, investigators accumulate evidence. They compare measurements against ot
 
 Validity is not a property that exists independently of context. A measure may be highly valid for one purpose and less valid for another. The usefulness of a variable ultimately depends on the question being asked.
 
-```
 ```
 ## Case Definitions: Who Counts as a Case?
 
@@ -332,7 +330,6 @@ The strongest researchers are not those who ignore these complexities.
 
 They are the ones who recognize them, discuss them openly, and incorporate them into their interpretation of results.
 
-```
 ```
 ## No Perfect Measurement
 
@@ -496,5 +493,4 @@ Should you believe it?
 
 The next chapter explores one of the central skills of epidemiologic thinking: learning how to distinguish an observed association from a convincing explanation.
 
-```
 ```
