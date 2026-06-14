@@ -14,16 +14,16 @@ Exposure and outcome are measured at the same time.
 
 ### Strengths
 
-- Fast
-- Relatively inexpensive
-- Useful for prevalence estimates
-- Useful for hypothesis generation
+* Fast
+* Relatively inexpensive
+* Useful for prevalence estimates
+* Useful for hypothesis generation
 
 ### Limitations
 
-- Temporality often unclear
-- Vulnerable to reverse causation
-- Limited causal inference
+* Temporality often unclear
+* Vulnerable to reverse causation
+* Limited causal inference
 
 ### Example
 
@@ -39,15 +39,15 @@ Participants are grouped according to exposure status and followed for outcomes.
 
 ### Strengths
 
-- Establishes temporality
-- Multiple outcomes can be studied
-- Stronger causal inference than cross-sectional studies
+* Establishes temporality
+* Multiple outcomes can be studied
+* Stronger causal inference than cross-sectional studies
 
 ### Limitations
 
-- Time consuming
-- Expensive
-- Loss to follow-up may occur
+* Time consuming
+* Expensive
+* Loss to follow-up may occur
 
 ### Example
 
@@ -63,15 +63,15 @@ Participants are selected according to outcome status.
 
 ### Strengths
 
-- Efficient for rare outcomes
-- Relatively inexpensive
-- Useful for hypothesis generation
+* Efficient for rare outcomes
+* Relatively inexpensive
+* Useful for hypothesis generation
 
 ### Limitations
 
-- Recall bias
-- Selection bias
-- Temporality may be difficult to establish
+* Recall bias
+* Selection bias
+* Temporality may be difficult to establish
 
 ### Example
 
@@ -99,9 +99,9 @@ Compares risk between groups.
 
 ### Interpretation
 
-- RR = 1 → No association
-- RR > 1 → Increased risk
-- RR < 1 → Decreased risk
+* RR = 1 → No association
+* RR > 1 → Increased risk
+* RR < 1 → Decreased risk
 
 ### Example
 
@@ -121,9 +121,9 @@ Frequently used in case-control studies and logistic regression.
 
 ### Interpretation
 
-- OR = 1 → No association
-- OR > 1 → Increased odds
-- OR < 1 → Decreased odds
+* OR = 1 → No association
+* OR > 1 → Increased odds
+* OR < 1 → Decreased odds
 
 ### Example
 
@@ -143,9 +143,9 @@ Frequently used in survival analysis.
 
 ### Interpretation
 
-- HR = 1 → No difference
-- HR > 1 → Faster occurrence
-- HR < 1 → Slower occurrence
+* HR = 1 → No difference
+* HR > 1 → Faster occurrence
+* HR < 1 → Slower occurrence
 
 ### Example
 
@@ -159,41 +159,195 @@ The outcome occurs 50% faster in the exposed group.
 
 # Confounding and Bias
 
+One of the most important lessons in epidemiology is that associations do not automatically represent causal relationships. Many observed findings can be partially or completely explained by confounding, bias, measurement limitations, or alternative explanations. Experienced investigators develop the habit of actively searching for these possibilities before accepting a result at face value.
+
 ## Confounding
 
-A third variable influences both the exposure and outcome.
+Confounding occurs when a third variable influences both the exposure and the outcome, creating or exaggerating an apparent association.
 
 ### Example
 
-Childhood adversity:
+Childhood adversity may be associated with both sleep disturbance and depression.
 
-- Associated with sleep disturbance
-- Associated with depression
+An observed sleep-depression association may therefore be partially explained by childhood adversity.
 
-May partially explain an observed sleep-depression association.
+### Key Question
+
+Could another factor explain both the exposure and the outcome?
+
+---
+
+## Residual Confounding
+
+Residual confounding refers to confounding that remains after statistical adjustment.
+
+This may occur because:
+
+* Important variables were never measured
+* Variables were measured imperfectly
+* Adjustment methods were incomplete
+* Available data do not fully capture the underlying construct
+
+### Example
+
+A study adjusts for age and sex but lacks information about socioeconomic status.
+
+Residual socioeconomic confounding may remain.
+
+### Common in EHR Research
+
+Many important psychiatric and social determinants are incompletely represented in electronic health records, including:
+
+* Housing instability
+* Social support
+* Childhood adversity
+* Educational attainment
+* Neighborhood environment
+
+Even after propensity score matching or multivariable adjustment, residual confounding often remains possible.
+
+---
+
+## Confounding by Indication
+
+The reason a patient receives a treatment is related to their underlying risk profile.
+
+### Example
+
+Patients prescribed antipsychotic medications often have more severe psychiatric illness than patients who are not prescribed those medications.
+
+Observed outcomes may reflect underlying illness severity rather than medication effects.
+
+### Common in EHR Research
+
+Particularly important in studies involving:
+
+* Medications
+* Surgical procedures
+* Hospitalization
+* Specialty referrals
+* Intensive treatments
+
+---
+
+## Time-Varying Confounding
+
+Confounders may change over time and may themselves be influenced by prior exposures.
+
+### Example
+
+Depression severity influences medication use, while medication use may influence future depression severity.
+
+The relationship changes throughout follow-up.
+
+### Common in Longitudinal Studies
+
+Time-varying confounding becomes increasingly important when analyzing outcomes across extended follow-up periods.
 
 ---
 
 ## Selection Bias
 
-Systematic differences in who enters a study.
+Selection bias occurs when systematic differences influence who enters a study or who remains in a study.
 
 ### Example
 
 Individuals with severe symptoms may be less likely to complete surveys.
 
+The resulting sample may not accurately represent the target population.
+
+---
+
+## Ascertainment Bias
+
+Some individuals are more likely than others to have diagnoses detected and recorded.
+
+### Example
+
+Patients with frequent healthcare utilization often accumulate more diagnoses simply because they interact with the healthcare system more often.
+
+### Common in EHR Research
+
+One of the most important sources of bias in EHR-based studies.
+
+Differences in:
+
+* Healthcare utilization
+* Observation time
+* Number of visits
+* Access to care
+
+can strongly influence observed disease prevalence.
+
+---
+
+## Surveillance Bias
+
+A specific form of ascertainment bias.
+
+Individuals who are monitored more closely are more likely to have outcomes detected.
+
+### Example
+
+Patients receiving frequent psychiatric evaluations may accumulate more psychiatric diagnoses than individuals receiving less intensive follow-up.
+
 ---
 
 ## Information Bias
 
-Systematic errors in measurement.
+Information bias occurs when measurement errors systematically affect study results.
 
 ### Examples
 
-- Recall bias
-- Diagnostic bias
-- Documentation bias
-- Interviewer bias
+* Recall bias
+* Documentation bias
+* Diagnostic bias
+* Interviewer bias
+* Misclassification
+
+---
+
+## Documentation Bias
+
+Electronic health records reflect what was documented rather than everything that occurred.
+
+### Example
+
+A patient may experience depression but never receive a diagnostic code.
+
+### Common in EHR Research
+
+The absence of documentation does not necessarily indicate the absence of disease.
+
+---
+
+## Diagnostic Bias
+
+Different clinicians may classify similar presentations differently.
+
+### Example
+
+One clinician may diagnose generalized anxiety disorder.
+
+Another may diagnose adjustment disorder.
+
+A third may not assign a formal diagnosis.
+
+The underlying clinical presentation may be similar despite different coding patterns.
+
+---
+
+## Referral Bias
+
+Patients reaching specialty care may differ substantially from those who never receive specialty evaluation.
+
+### Example
+
+Patients treated in psychiatry clinics may represent more severe illness than psychiatric patients in the general population.
+
+### Common in Health-System Research
+
+Referral patterns can strongly influence observed associations.
 
 ---
 
@@ -203,7 +357,75 @@ The outcome influences the exposure rather than the exposure influencing the out
 
 ### Example
 
-Depression may contribute to sleep disturbance.
+Depression may contribute to sleep disturbance rather than sleep disturbance causing depression.
+
+### Key Question
+
+Could the direction of the relationship be reversed?
+
+---
+
+## Survivorship Bias
+
+Individuals who remain observable differ from those who do not.
+
+### Example
+
+Patients lost to follow-up may systematically differ from those who remain under observation.
+
+### Common in Longitudinal Research
+
+The observed sample may become increasingly non-representative over time.
+
+---
+
+## Immortal Time Bias
+
+A period during which an outcome could not have occurred is incorrectly attributed to an exposure group.
+
+### Example
+
+Patients must survive long enough to receive a treatment.
+
+This can make treatments appear more protective than they truly are.
+
+### Common in EHR Research
+
+Particularly important in retrospective treatment-effect studies.
+
+---
+
+## Missing Data Bias
+
+Missing information is often systematic rather than random.
+
+### Example
+
+Patients with severe illness may be less likely to complete questionnaires or follow-up assessments.
+
+### Common Sources
+
+* Laboratory data
+* Behavioral variables
+* Social determinants
+* Survey responses
+
+---
+
+# Common Threats in EHR Research
+
+When interpreting EHR-derived findings, ask the following questions:
+
+1. Could healthcare utilization explain the result?
+2. Could differential diagnosis rates explain the result?
+3. Could documentation practices explain the result?
+4. Could referral patterns explain the result?
+5. Could treatment indication explain the result?
+6. Could observation time differ between groups?
+7. Could missing data influence interpretation?
+8. Could residual confounding remain despite matching or adjustment?
+
+These questions are particularly important when evaluating studies conducted using TriNetX, electronic health records, claims databases, registries, and other real-world data sources.
 
 ---
 
@@ -213,12 +435,12 @@ Depression may contribute to sleep disturbance.
 
 The factor being investigated.
 
-Examples:
+### Examples
 
-- Trauma
-- Sleep disturbance
-- Smoking
-- Exercise
+* Trauma
+* Sleep disturbance
+* Smoking
+* Exercise
 
 ---
 
@@ -226,12 +448,12 @@ Examples:
 
 The condition or event being studied.
 
-Examples:
+### Examples
 
-- Depression
-- Cognitive decline
-- Suicide attempt
-- Mortality
+* Depression
+* Cognitive decline
+* Suicide attempt
+* Mortality
 
 ---
 
@@ -249,7 +471,11 @@ Childhood adversity → Sleep disturbance → Depression
 
 A variable influenced by both exposure and outcome.
 
-Adjusting for colliders can introduce bias.
+Adjusting for colliders can introduce bias and create misleading associations.
+
+### Example
+
+If both depression and sleep disturbance increase healthcare utilization, restricting analysis to frequent healthcare users may unintentionally distort the observed association.
 
 ---
 
@@ -287,10 +513,13 @@ Does the variable capture the concept of interest?
 
 Participants are assigned to the wrong category.
 
-Examples:
+### Examples
 
-- False positive diagnoses
-- False negative diagnoses
+* False positive diagnoses
+* False negative diagnoses
+* Incorrect exposure classification
+
+Misclassification may be random or systematic and can substantially influence results.
 
 ---
 
@@ -305,6 +534,7 @@ When evaluating a paper, ask:
 5. Could bias explain the result?
 6. Is temporality established?
 7. Are conclusions justified by the evidence?
+8. What alternative explanations remain plausible?
 
 ---
 
@@ -312,11 +542,12 @@ When evaluating a paper, ask:
 
 When interpreting findings, ask:
 
-- What upstream factors may contribute?
-- Are social determinants considered?
-- Are disparities present?
-- Which populations are represented?
-- Which populations may be missing?
+* What upstream factors may contribute?
+* Are social determinants considered?
+* Are disparities present?
+* Which populations are represented?
+* Which populations may be missing?
+* What larger systems may be influencing the observed pattern?
 
 ---
 
