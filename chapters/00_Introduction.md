@@ -76,12 +76,11 @@ The chapters that follow are organized around a sequence of questions that inves
 
 ```mermaid
 flowchart LR
-A[Question]
---> B[Measurement]
---> C[Inference]
---> D[Population Context]
---> E[Trust]
---> F[Impact]
+    A["Question"] --> B["Measurement"]
+    B --> C["Inference"]
+    C --> D["Population Context"]
+    D --> E["Trust"]
+    E --> F["Impact"]
 ```
 
 The framework is intentionally simple. Research rarely follows a perfectly linear path, and investigators often move back and forth between these stages. Nevertheless, the sequence captures many of the core challenges that emerge as a project develops.

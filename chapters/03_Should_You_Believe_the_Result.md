@@ -553,6 +553,4 @@ Why do patterns emerge across groups, communities, and societies in the first pl
 
 Answering that question requires shifting from individuals to populations and learning to see health through a wider lens.
 
-```
-```
 

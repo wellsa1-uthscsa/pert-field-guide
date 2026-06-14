@@ -490,5 +490,3 @@ Every investigator contributes a voice.
 
 The next question is yours.
 
-```
-```

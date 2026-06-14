@@ -78,8 +78,6 @@ The way findings are communicated matters.
 
 Each decision either strengthens or weakens the trust upon which research depends.
 
-```
-```
 ## How Trust Is Lost
 
 When people hear the phrase *research misconduct*, they often think of dramatic scandals.
@@ -188,8 +186,6 @@ Trust is strengthened when investigators communicate what the evidence supports.
 
 Trust is weakened when confidence extends beyond the evidence itself.
 
-```
-```
 ## Why Belmont Still Matters
 
 If trust is the foundation of research, an important question naturally follows:
@@ -316,8 +312,6 @@ The goal is not to abandon foundational principles.
 
 The goal is to continue asking whether we are applying them wisely in the world we actually inhabit.
 
-```
-```
 ## Ethical Challenges in the Era of Big Data
 
 Many of the ethical frameworks that guide modern research were developed in an era when investigators interacted directly with participants. Researchers recruited volunteers, obtained consent, collected data, and conducted analyses within relatively contained projects.
@@ -527,6 +521,3 @@ The final chapter turns to a different question.
 Once research has been conducted responsibly and knowledge has been generated, what happens next?
 
 How do findings move beyond papers and presentations to influence practice, policy, and ultimately the health of populations?
-
-```
-```

@@ -333,5 +333,3 @@ If researchers are trusted to study populations, access sensitive data, and gene
 
 The next chapter explores the ethical foundations of research and the principles that help ensure scientific work remains worthy of the public's trust.
 
-```
-```
