@@ -7,13 +7,27 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2685.6">
   <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
   </style>
 </head>
 <body>
-<p class="p1">&lt;script type="module"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";</p>
-<p class="p1"><span class="Apple-converted-space">  </span>mermaid.initialize({ startOnLoad: true });</p>
-<p class="p1">&lt;/script&gt;</p>
+<p class="p1"><span class="s1">&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>window.addEventListener("load", function () {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const scripts = document.querySelectorAll("script");</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>scripts.forEach(function (script) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if (script.textContent.includes("mermaid.initialize")) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>script.style.display = "none";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>});</span></p>
+<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;script type="module"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>mermaid.initialize({ startOnLoad: true });</span></p>
+<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
 </body>
 </html>
