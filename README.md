@@ -102,19 +102,19 @@ papers/
 
 ### Core Chapters
 
-* [Introduction](chapters/00_Introduction.md)
-* [Chapter 1: Asking Better Questions](chapters/01_Asking_Better_Questions.md)
-* [Chapter 2: Defining What You Are Studying](chapters/02_Defining_What_You_Are_Studying.md)
-* [Chapter 3: Should You Believe the Result?](chapters/03_Should_You_Believe_the_Result.md)
-* [Chapter 4: Thinking Like a Population Health Researcher](chapters/04_Thinking_Like_a_Population_Health_Researcher.md)
-* [Chapter 5: Research, Responsibility, and Trust](chapters/05_Research_Responsibility_and_Trust.md)
-* [Chapter 6: From Question to Impact](chapters/06_From_Question_to_Impact.md)
+- [Introduction]({{ site.baseurl }}/chapters/00_Introduction.html)
+- [Chapter 1: Asking Better Questions]({{ site.baseurl }}/chapters/01_Asking_Better_Questions.html)
+- [Chapter 2: Defining What You Are Studying]({{ site.baseurl }}/chapters/02_Defining_What_You_Are_Studying.html)
+- [Chapter 3: Should You Believe the Result?]({{ site.baseurl }}/chapters/03_Should_You_Believe_the_Result.html)
+- [Chapter 4: Thinking Like a Population Health Researcher]({{ site.baseurl }}/chapters/04_Thinking_Like_a_Population_Health_Researcher.html)
+- [Chapter 5: Research, Responsibility, and Trust]({{ site.baseurl }}/chapters/05_Research_Responsibility_and_Trust.html)
+- [Chapter 6: From Question to Impact]({{ site.baseurl }}/chapters/06_From_Question_to_Impact.html)
 
 ### Appendices
 
-* [Epidemiology Quick Reference](appendices/Epidemiology_Quick_Reference.md)
-* [Statistical Test Guide](appendices/Statistical_Test_Guide.md)
-* [Letter to Future Investigators](appendices/Letter_to_Future_Investigators.md)
+- [Epidemiology Quick Reference]({{ site.baseurl }}/appendices/Epidemiology_Quick_Reference.html)
+- [Statistical Test Guide]({{ site.baseurl }}/appendices/Statistical_Test_Guide.html)
+- [Letter to Future Investigators]({{ site.baseurl }}/appendices/Letter_to_Future_Investigators.html)
 
 
 ---
