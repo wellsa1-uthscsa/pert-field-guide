@@ -5,7 +5,7 @@
 
 ## Overview
 
-The PERT (Prospective Psychiatry Epidemiology Research Training) Field Guide is an educational handbook designed for medical students, psychiatry residents, graduate students, clinical fellows, and early-career investigators interested in psychiatric epidemiology, population health, and clinical research.
+The PERT (Psychiatry Epidemiology Research Training) Field Guide is an educational handbook designed for medical students, psychiatry residents, graduate students, clinical fellows, and early-career investigators interested in psychiatric epidemiology, population health, and clinical research.
 
 The goal of this guide is not to provide a comprehensive textbook of epidemiology or biostatistics.
 
