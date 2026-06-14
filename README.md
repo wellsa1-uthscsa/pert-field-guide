@@ -79,20 +79,43 @@ PERT-Field-Guide/
 
 README.md
 
-00_Introduction.md
-
-01_Asking_Better_Questions.md
-02_Defining_What_You_Are_Studying.md
-03_Should_You_Believe_the_Result.md
-04_Thinking_Like_a_Population_Health_Researcher.md
-05_Research_Responsibility_and_Trust.md
-06_From_Question_to_Impact.md
+chapters/
+├── 00_Introduction.md
+├── 01_Asking_Better_Questions.md
+├── 02_Defining_What_You_Are_Studying.md
+├── 03_Should_You_Believe_the_Result.md
+├── 04_Thinking_Like_a_Population_Health_Researcher.md
+├── 05_Research_Responsibility_and_Trust.md
+└── 06_From_Question_to_Impact.md
 
 appendices/
 ├── Epidemiology_Quick_Reference.md
 ├── Statistical_Test_Guide.md
 └── Letter_to_Future_Investigators.md
+
+papers/
 ```
+
+---
+
+## Read the Handbook
+
+### Core Chapters
+
+* [Introduction](chapters/00_Introduction.md)
+* [Chapter 1: Asking Better Questions](chapters/01_Asking_Better_Questions.md)
+* [Chapter 2: Defining What You Are Studying](chapters/02_Defining_What_You_Are_Studying.md)
+* [Chapter 3: Should You Believe the Result?](chapters/03_Should_You_Believe_the_Result.md)
+* [Chapter 4: Thinking Like a Population Health Researcher](chapters/04_Thinking_Like_a_Population_Health_Researcher.md)
+* [Chapter 5: Research, Responsibility, and Trust](chapters/05_Research_Responsibility_and_Trust.md)
+* [Chapter 6: From Question to Impact](chapters/06_From_Question_to_Impact.md)
+
+### Appendices
+
+* [Epidemiology Quick Reference](appendices/Epidemiology_Quick_Reference.md)
+* [Statistical Test Guide](appendices/Statistical_Test_Guide.md)
+* [Letter to Future Investigators](appendices/Letter_to_Future_Investigators.md)
+
 
 ---
 
@@ -152,7 +175,5 @@ The purpose is to help readers think more clearly about questions, evidence, pop
 
 When uncertainty arises, the handbook favors clarity over completeness and judgment over memorization.
 
-=======
-# pert-field-guide
-An open-access field guide to psychiatric epidemiology, clinical research methods, causal inference, and scientific communication for trainees and early investigators.
+
 
