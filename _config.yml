@@ -1,15 +1,14 @@
-title: PERT Field Guide
-description: A Practical Introduction to Psychiatric Epidemiology and Population Health Research
+title: "PERT Field Guide"
+description: "A Practical Introduction to Psychiatric Epidemiology and Population Health Research"
 
-remote_theme: just-the-docs/just-the-docs
+remote_theme: "just-the-docs/just-the-docs"
 
 url: "https://wellsa1-uthscsa.github.io"
 baseurl: "/pert-field-guide"
 
-color_scheme: light
+color_scheme: "light"
 
 search_enabled: true
-
 heading_anchors: true
 
 back_to_top: true
@@ -18,14 +17,13 @@ back_to_top_text: "Back to top"
 footer_content: "PERT Field Guide"
 
 aux_links:
-GitHub Repository:
-- "https://github.com/wellsa1-uthscsa/pert-field-guide"
+  "GitHub Repository":
+    - "https://github.com/wellsa1-uthscsa/pert-field-guide"
 
-nav_sort: case_insensitive
+nav_sort: "case_insensitive"
 
 exclude:
-
-* Gemfile
-* Gemfile.lock
-* node_modules
-* vendor
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "vendor"
