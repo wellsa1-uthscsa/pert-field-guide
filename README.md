@@ -1,3 +1,4 @@
+
 # PERT Field Guide
 
 *A Practical Introduction to Psychiatric Epidemiology and Population Health Research*
@@ -150,3 +151,8 @@ The purpose of this handbook is not to teach everything.
 The purpose is to help readers think more clearly about questions, evidence, populations, responsibility, and impact.
 
 When uncertainty arises, the handbook favors clarity over completeness and judgment over memorization.
+
+=======
+# pert-field-guide
+An open-access field guide to psychiatric epidemiology, clinical research methods, causal inference, and scientific communication for trainees and early investigators.
+
