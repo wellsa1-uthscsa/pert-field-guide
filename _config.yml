@@ -16,6 +16,9 @@ back_to_top_text: "Back to top"
 
 footer_content: "PERT Field Guide"
 
+mermaid:
+  version: "10.9.1"
+
 aux_links:
   "GitHub Repository":
     - "https://github.com/wellsa1-uthscsa/pert-field-guide"
